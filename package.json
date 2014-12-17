@@ -1,0 +1,43 @@
+{
+  "name": "defaults-deep-safe",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seegno/defaults-deep-safe.git"
+  },
+  "description": "A deep version of _.defaults, safe by default.",
+  "keywords": [
+    "_",
+    "_.defaults",
+    "clone",
+    "deep",
+    "defaults",
+    "lodash",
+    "merge"
+  ],
+  "author": {
+    "name": "Rui Marinho",
+    "email": "rui.marinho@seegno.com",
+    "url": "https://seegno.com"
+  },
+  "homepage": "https://github.com/seegno/defaults-deep-safe",
+  "bugs": {
+    "url": "https://github.com/seegno/defaults-deep-safe/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "changelog": "./node_modules/.bin/github-changes -o seegno -r defaults-deep-safe -a --only-pulls --use-commit-body --title 'Changelog' --date-format '/ YYYY-MM-DD'",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/*_test.js --require should --reporter spec"
+  },
+  "dependencies": {
+    "lodash": "^3.1.0"
+  },
+  "devDependencies": {
+    "github-changes": "0.0.16",
+    "mocha": "^2.0.1",
+    "should": "^4.2.1"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
