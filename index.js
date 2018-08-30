@@ -29,5 +29,9 @@ function mergeDefaults(objectValue, sourceValue) {
 module.exports = function() {
   var args = _.toArray(arguments);
 
-  return _.merge.apply(null, _.initial(args).concat(_.rest(args).map(_.cloneDeep)).concat(mergeDefaults));
+  return [_.head(args)].concat(_.drop(args)).map(_.cloneDeep).concat(_.head(args)).reverse().reduce((result, object) => {
+    return _.mergeWith(result, object, (objectValue, sourceValue) => {
+      return _.isArray(sourceValue) ? sourceValue : undefined;
+    });
+  });
 };

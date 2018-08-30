@@ -26,18 +26,18 @@
   },
   "license": "MIT",
   "scripts": {
-    "changelog": "./node_modules/.bin/github-changes -o seegno -r defaults-deep-safe -a --only-pulls --use-commit-body --title 'Changelog' --date-format '/ YYYY-MM-DD'",
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/*_test.js --require should --reporter spec"
+    "changelog": "github-changelog-generator -f $npm_package_version > CHANGELOG.md",
+    "test": "mocha test/*_test.js --require should"
   },
   "dependencies": {
-    "lodash": "^3.1.0"
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
-    "github-changes": "0.0.16",
-    "mocha": "^2.0.1",
-    "should": "^4.2.1"
+    "@uphold/github-changelog-generator": "^0.7.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
   },
   "engines": {
-    "node": ">= 0.10"
+    "node": ">=4.0.0"
   }
 }

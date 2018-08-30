@@ -1,4 +1,4 @@
-## Changelog
+# Changelog
 
-### 0.0.1 / 2015-02-08
-- [#1](https://github.com/seegno/defaults-deep-safe/pull/1) Update package version (@fixe)
+## [0.0.1](https://github.com/ruimarinho/defaults-deep-safe/releases/tag/0.0.1) (2018-08-30)
+- Update package version [\#1](https://github.com/ruimarinho/defaults-deep-safe/pull/1) ([fixe](https://github.com/fixe))
