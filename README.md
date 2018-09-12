@@ -103,5 +103,5 @@ MIT
 
 [npm-image]: https://img.shields.io/npm/v/defaults-deep-safe.svg
 [npm-url]: https://npmjs.org/package/defaults-deep-safe
-[travis-image]: https://travis-ci.org/seegno/defaults-deep-safe.svg
-[travis-url]: https://travis-ci.org/seegno/defaults-deep-safe
+[travis-image]: https://travis-ci.org/ruimarinho/defaults-deep-safe.svg
+[travis-url]: https://travis-ci.org/ruimarinho/defaults-deep-safe

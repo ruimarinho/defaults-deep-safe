@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seegno/defaults-deep-safe.git"
+    "url": "https://github.com/ruimarinho/defaults-deep-safe.git"
   },
   "description": "A deep version of _.defaults, safe by default.",
   "keywords": [
@@ -17,12 +17,11 @@
   ],
   "author": {
     "name": "Rui Marinho",
-    "email": "rui.marinho@seegno.com",
-    "url": "https://seegno.com"
+    "email": "rui@uphold.com"
   },
-  "homepage": "https://github.com/seegno/defaults-deep-safe",
+  "homepage": "https://github.com/ruimarinho/defaults-deep-safe",
   "bugs": {
-    "url": "https://github.com/seegno/defaults-deep-safe/issues"
+    "url": "https://github.com/ruimarinho/defaults-deep-safe/issues"
   },
   "license": "MIT",
   "scripts": {
