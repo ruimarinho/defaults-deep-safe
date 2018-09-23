@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var _ = require('lodash');
+const _ = require('lodash');
 
 /**
  * Merge defaults.
@@ -26,9 +26,7 @@ function mergeDefaults(objectValue, sourceValue) {
  * Export `defaultsDeep`.
  */
 
-module.exports = function() {
-  var args = _.toArray(arguments);
-
+module.exports = function defaultsDeepSafe(...args) {
   return [_.head(args)].concat(_.drop(args)).map(_.cloneDeep).concat(_.head(args)).reverse().reduce((result, object) => {
     return _.mergeWith(result, object, (objectValue, sourceValue) => {
       return _.isArray(sourceValue) ? sourceValue : undefined;

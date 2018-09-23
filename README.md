@@ -26,10 +26,10 @@ $ npm install defaults-deep-safe
 
 #### Example
 ```js
-var defaultsDeep = require('defaults-deep-safe');
+const defaultsDeep = require('defaults-deep-safe');
 
-var object = { foo: 'bar', bar: { biz: { net: 'qux' } }, qux: ['biz'] };
-var source = { bar: { biz: { net: 'txi', qox: 'fuc' } }, qux: ['baz'] };
+const object = { foo: 'bar', bar: { biz: { net: 'qux' } }, qux: ['biz'] };
+const source = { bar: { biz: { net: 'txi', qox: 'fuc' } }, qux: ['baz'] };
 
 defaultsDeep(object, source);
 // => { foo: 'bar', bar: { biz: { net: 'qux', qox: 'fuc' } }, qux: ['biz'] }
@@ -38,7 +38,7 @@ defaultsDeep(object, source);
 Or as a lodash `mixin`:
 
 ```js
-var _ = require('lodash');
+const _ = require('lodash');
 
 _.mixin({
   defaultsDeep: require('defaults-deep-safe')
@@ -54,10 +54,10 @@ This module is perfect for merging config/settings files and to safely handle op
 Here's a quick example demonstrating why using `_.defaults` may not be a safe operation:
 
 ```js
-var foo = { a: 1, c: 2 };
-var bar = { b: new Date(), d: { e: 'f' } };
+const foo = { a: 1, c: 2 };
+const bar = { b: new Date(), d: { e: 'f' } };
 
-var result = require('lodash').defaults(foo, bar);
+const result = require('lodash').defaults(foo, bar);
 
 require('assert')(bar.b === result.b);
 // => true
@@ -74,10 +74,10 @@ console.log(bar.d);
 Using `defaults-deep-safe`:
 
 ```js
-var foo = { a: 1, c: 2 };
-var bar = { b: new Date(), d: { e: 'f' } };
+const foo = { a: 1, c: 2 };
+const bar = { b: new Date(), d: { e: 'f' } };
 
-var result = require('lodash').defaults(foo, bar);
+const result = require('defaults-deep-safe')(foo, bar);
 
 require('assert')(bar.b === result.b);
 // => AssertionError: false == true
