@@ -44,7 +44,7 @@ describe('Deep merge', function() {
     result.should.have.property('foo', 'bar');
     result.bar.should.have.keys('biz');
     result.bar.biz.should.have.keys('net', 'qox');
-    result.should.have.property('bar').with.a.property('biz').which.is.an.Object.with.properties({
+    result.bar.biz.should.have.properties({
       net: 'qux',
       qox: 'fuc'
     });
