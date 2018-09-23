@@ -25,8 +25,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "changelog": "github-changelog-generator -f $npm_package_version > CHANGELOG.md",
-    "test": "mocha test/*_test.js --require should"
+    "changelog": "github-changelog-generator --future-release=$npm_package_version --future-release-tag=v$npm_package_version > CHANGELOG.md",
+    "test": "mocha test/*_test.js --require should",
+    "version": "npm run changelog && git add -A CHANGELOG.md"
   },
   "dependencies": {
     "lodash": "^4.17.10"
