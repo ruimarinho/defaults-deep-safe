@@ -12,7 +12,7 @@ A deep version of `_.defaults(object, [sources])`, safe by default by deep cloni
 Install the package via `npm`:
 
 ```
-$ npm install defaults-deep-safe
+❯ npm install defaults-deep-safe
 ```
 
 ## Usage
@@ -94,7 +94,7 @@ console.log(bar.d);
 ## Tests
 
 ```
-$ npm test
+❯ npm test
 ```
 
 ## License
